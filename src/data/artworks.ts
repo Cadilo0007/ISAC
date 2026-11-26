@@ -1,0 +1,122 @@
+import { Artwork } from '../types.ts';
+
+/**
+ * ART CIRCLE GALLERY DATA
+ *
+ * Para madali mong i-edit manually (mano-mano):
+ * Palitan lang ang `status`:
+ * - 'available' -> Walang red dot, may subtle "Available" text
+ * - 'reserved'  -> May small red dot + "Reserved"
+ * - 'sold'      -> May small red dot + "Sold", hindi na mabibili
+ */
+export const ARTWORKS_DATA: Artwork[] = [
+  {
+    id: 'art-silent-contour',
+    title: 'Silent Contour No. 4',
+    artist: 'Elena Vance',
+    artistSlug: 'elena-vance',
+    year: 2024,
+    medium: 'Oil, marble dust, and raw pigment on heavy Belgian linen',
+    dimensions: '140 × 110 cm (55 × 43 in)',
+    price: 4800,
+    currency: 'USD',
+    category: 'Paintings',
+    status: 'available', // I-edit ito: 'available' | 'reserved' | 'sold'
+    image: '/src/assets/images/artwork_silent_contour_1792565466306.jpg',
+    description: 'An exploration of architectural silence and textural restraint. Thick impasto contrasts with exposed raw linen weave, creating a quiet tactile dialogue between light and void. Created across eight weeks of successive pigment stratification.',
+    artistBio: 'Elena Vance (b. 1984) is a London and Lisbon-based painter and founder of Art Circle. Her practice examines architectural reduction, tactile materiality, and quiet meditative spaces.',
+    edition: 'Unique original piece',
+    featured: true,
+  },
+  {
+    id: 'art-chroma-meridian',
+    title: 'Chroma Meridian at Dawn',
+    artist: 'Evelyn Dubois',
+    artistSlug: 'evelyn-dubois',
+    year: 2023,
+    medium: 'Archival pigment print on Hahnemühle Photo Rag, museum float frame in American walnut',
+    dimensions: '120 × 90 cm (47 × 35 in)',
+    price: 3200,
+    currency: 'USD',
+    category: 'Photography',
+    status: 'sold', // May red dot
+    soldAt: '2026-09-12',
+    image: '/src/assets/images/artwork_chroma_meridian_1792565467666.jpg',
+    description: 'Captured along the misty North Atlantic coast during the winter solstice, Chroma Meridian isolates subtle mineral gradients across sea and horizon. The minimal composition dissolves the boundary between liquid atmosphere and sky.',
+    artistBio: 'Evelyn Dubois (b. 1978, Normandy) investigates the atmospheric liminality of coastal topographies. Her works are held in institutional and private collections throughout Paris, Basel, and Zurich.',
+    edition: 'Edition 3 of 6 (Sold)',
+    featured: true,
+  },
+  {
+    id: 'art-monolith-study',
+    title: 'Monolith Study in Basalt',
+    artist: 'Kaelen Chen',
+    artistSlug: 'kaelen-chen',
+    year: 2024,
+    medium: 'Hand-coiled textured stoneware, blackened bronze patina, honed travertine pedestal',
+    dimensions: '48 × 34 × 36 cm (19 × 13 × 14 in)',
+    price: 5600,
+    currency: 'USD',
+    category: 'Sculptures',
+    status: 'reserved', // May red dot
+    image: '/src/assets/images/artwork_monolith_study_1792565468143.jpg',
+    description: 'A weighty sculptural vessel exploring balance, compression, and geological time. Created through gradual reductive carving and high-fire reduction, resulting in an ancient, tactile surface reminiscent of volcanic strata.',
+    artistBio: 'Kaelen Chen (b. 1982, Taipei) works between ceramic sculpture and spatial design, interrogating tectonic gestures and organic imperfection.',
+    edition: 'Unique original sculpture',
+    featured: true,
+  },
+  {
+    id: 'art-vellum-monotype',
+    title: 'Vellum Monotype VII',
+    artist: 'Astrid Lindholm',
+    artistSlug: 'astrid-lindholm',
+    year: 2024,
+    medium: 'Monotype relief print and mineral sumi ink on handmade Japanese washi paper',
+    dimensions: '76 × 56 cm (30 × 22 in)',
+    price: 1950,
+    currency: 'USD',
+    category: 'Prints',
+    status: 'available',
+    image: '/src/assets/images/artwork_vellum_monotype_1792565484177.jpg',
+    description: 'A singular, non-editioned monotype created with slow ink washes and dampened botanical fibers. Deckled raw edges float over natural warm cotton matting within a bespoke white oak floater frame.',
+    artistBio: 'Astrid Lindholm (b. 1991, Stockholm) is a master printmaker whose delicate ink matrices examine ephemerality and quiet cadence.',
+    edition: 'Monotype 1 of 1 (Non-editioned)',
+    featured: true,
+  },
+  {
+    id: 'art-spatial-echoes',
+    title: 'Spatial Echoes in Ochre & Indigo',
+    artist: 'Julian Croft',
+    artistSlug: 'julian-croft',
+    year: 2024,
+    medium: 'Casein, oil wash, and graphite on stretched Belgian linen',
+    dimensions: '165 × 135 cm (65 × 53 in)',
+    price: 6400,
+    currency: 'USD',
+    category: 'Paintings',
+    status: 'available',
+    image: '/src/assets/images/artwork_spatial_echoes_1792565485026.jpg',
+    description: 'Layered semi-transparent wash strokes build an inner luminosity. The juxtaposition of earth umber against raw indigo evokes architectural shadows cast across warm plaster walls.',
+    artistBio: 'Julian Croft (b. 1975, Melbourne) explores chromatic resonance and color-field architecture, exhibiting widely across Europe and Australia.',
+    edition: 'Unique original piece',
+    featured: true,
+  },
+  {
+    id: 'art-bronze-torso',
+    title: 'Brutalist Column No. 3',
+    artist: 'Kaelen Chen',
+    artistSlug: 'kaelen-chen',
+    year: 2023,
+    medium: 'Cast bronze with hand-applied cold wax finish, volcanic basalt plinth',
+    dimensions: '72 × 38 × 30 cm (28 × 15 × 12 in)',
+    price: 8200,
+    currency: 'USD',
+    category: 'Sculptures',
+    status: 'sold', // May red dot
+    image: '/src/assets/images/artwork_bronze_torso_1792565485911.jpg',
+    description: 'A sharp geometric study in architectural gravity and cast bronze mass. Each planar facet catches ambient gallery light in stark, contemplative contrast.',
+    artistBio: 'Kaelen Chen (b. 1982, Taipei) creates architectural monuments and bronze studies focused on tectonic structural rhythm.',
+    edition: 'Edition 1 of 3 (Sold)',
+    featured: false,
+  },
+];

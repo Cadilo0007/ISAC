@@ -1,0 +1,6 @@
+{
+  "name": "Art Circle Studio",
+  "description": "An independent contemporary art studio and curated collection celebrating quiet elegance, storytelling, and timeless artwork.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
